@@ -18,6 +18,7 @@ public class LoginTest {
         LoginPage loginPage = new LoginPage(); // Fixed typo from loginPagen to loginPage
         loginPage.login("Admin", "admin123");
         Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"));
+        System.out.print("hi");
     }
 
     @Test
