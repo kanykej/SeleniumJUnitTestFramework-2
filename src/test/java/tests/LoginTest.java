@@ -27,6 +27,7 @@ public class LoginTest {
         LoginPage loginPage = new LoginPage(); // Fixed typo from loginPagen to loginPage
         loginPage.login("Admin", "adm123");
         Assert.assertTrue(loginPage.invalidLog.isDisplayed(), "Invalid login message not displayed");
+        System.out.println("hello");
     }
 
     // @AfterMethod
